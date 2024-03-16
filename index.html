@@ -8,30 +8,79 @@
 </head>
 <body>
     <!-- Заголовок (Header) -->
-    <header>
-        <!-- Вміст заголовка тут -->
-        <h1>Заголовок сайту</h1>
-        <nav>
-            <!-- Меню сайту тут -->
-            <ul>
-                <li><a href="#">Пошук</a></li>
-                <li><button>Знайти</button></li>
-            </ul>
-        </nav>
-    </header>
+<header style="background-color: #f0f0f0; padding: 10px; display: flex; justify-content: flex-end; align-items: center;">
+    <!-- Сторінка входу (Login Page) -->
+    <div class="login-container" style="margin-top: 5px; text-align: center;">
+        <form action="/login" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</header>
+    <div class="search-container" style="margin-top: 20px; display: flex; justify-content: center;">
+    	<input type="text" placeholder="Пошук..." style="width: 250px; padding: 5px; border: 1px solid #ccc; border-radius: 4px;">
+    	<button style="margin-left: 10px; padding: 5px 10px; background-color: #4CAF50; color: white; border: none; border-radius: 4px; cursor: pointer;">Знайти</button>
+    </div>
+    <div class="category-container" style="margin-top: 20px; text-align: center;">
+    	<h2 style="margin-bottom: 10px;">Категорії оголошень</h2>
+    	<div style="padding: 0;">
+            <button style="margin-right: 10px;">Категорія 1</button>
+            <button style="margin-right: 10px;">Категорія 2</button>
+            <button style="margin-right: 10px;">Категорія 3</button>
+        <!-- Додайте інші категорії за потреби -->
+    	</div>
+    </div>
     <!-- Лінія для відокремлення -->
     <hr>
     <!-- Тіло (Body) -->
     <main>
-        <!-- Вміст тіла сайту тут -->
-        <section class="block">
-            <h2>Перший блок</h2>
-            <p>Тут буде вміст першого блоку.</p>
-        </section>
-        <section class="block">
-            <h2>Другий блок</h2>
-            <p>Тут буде вміст другого блоку.</p>
-        </section>
+        <div class="popular-ads-container" style="margin-top: 20px; text-align: center;">
+            <h2 style="margin-bottom: 10px;">Популярні оголошення</h2>
+            <ul style="list-style-type: none; padding: 0;">
+            	<li style="display: inline-block; margin-right: 10px;">
+            	    <img src="image1.jpg" alt="Оголошення 1">
+            	    <p>Опис оголошення 1</p>
+            	</li>
+            	<li style="display: inline-block; margin-right: 10px;">
+            	    <img src="image2.jpg" alt="Оголошення 2">
+            	    <p>Опис оголошення 2</p>
+            	</li>
+            	<li style="display: inline-block; margin-right: 10px;">
+            	    <img src="image3.jpg" alt="Оголошення 3">
+            	    <p>Опис оголошення 3</p>
+            	</li>
+            	<!-- Додайте інші оголошення за потреби -->
+    	    </ul>
+    	</div>
+<!-- Додайте інші оголошення за потреби -->
+<div class="category-ads-container" style="margin-top: 20px; text-align: center;">
+    <h2 style="margin-bottom: 10px;">Категорії оголошень</h2>
+    <ul style="list-style-type: none; padding: 0;">
+        <li style="display: inline-block; margin-right: 10px;">
+            <img src="category1.jpg" alt="Категорія 1">
+            <p>Категорія 1</p>
+        </li>
+        <li style="display: inline-block; margin-right: 10px;">
+            <img src="category2.jpg" alt="Категорія 2">
+            <p>Категорія 2</p>
+        </li>
+        <li style="display: inline-block; margin-right: 10px;">
+            <img src="category3.jpg" alt="Категорія 3">
+            <p>Категорія 3</p>
+        </li>
+        <!-- Додайте інші категорії за потреби -->
+    </ul>
+</div>
+<div id="chat-container" style="position: fixed; bottom: 0; left: 0; width: 350px; height: 350px; background-color: #f0f0f0; border: 1px solid #ccc;">
+    <div id="chat-header" style="background-color: #ccc; padding: 5px;">Чат</div>
+    <div id="chat-messages" style="padding: 10px; overflow-y: auto;"></div>
+    <textarea id="chat-input" style="width: calc(100% - 30px); margin: 0 10px; padding: 5px;"></textarea>
+    <input type="email" id="email-input" placeholder="Введіть вашу пошту" style="width: calc(100% - 30px); margin: 10px; padding: 5px;">
+    <button id="send-button" onclick="sendMessage()" style="width: calc(100% - 30px); margin: 0 10px; padding: 5px;">Надіслати</button>
+</div>
     </main>
     <!-- Лінія для відокремлення -->
     <hr>
