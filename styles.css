@@ -47,7 +47,7 @@ button:hover {
     background-color: rgba(104, 85, 224, 1);
 }
 
-.card {
+.social-card {
     width: fit-content;
     height: fit-content;
     background-color: rgb(255, 255, 255);
@@ -56,7 +56,6 @@ button:hover {
     justify-content: center;
     padding-top: 25px;
     gap: 15px;
-    /*box-shadow: 0px 0px 10px rgba(0, 0, 0, 0);*/
 }
 
 /* for all social containers*/
@@ -128,6 +127,7 @@ body {
 
 .search_box {
     padding-top : 10px;
+    margin-bottom: 25px;
 }
 
 .search {
@@ -197,4 +197,84 @@ body {
     -webkit-transform: translate(55px,0);
     -o-transform: translate(55px,0);
     -moz-transform: translate(55px);
+}
+
+.content-card {
+    position: relative;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    width: 245px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: 32px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    background: linear-gradient(135deg, #e74e8f, #efa355);
+    margin: 10px; /* проміжок між карточками */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    color: #fff9f9;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.content .heading {
+    font-weight: 10;
+    font-size: 32px;
+}
+
+.content .para {
+    line-height: 1.5;
+}
+
+.content .btn {
+    color: #e8e8e8;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 100;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+    z-index: -1;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card:hover::before {
+    width: 100%;
+}
+
+.card:hover {
+    box-shadow: none;
+}
+
+.card:hover .btn {
+    color: #212121;
+    background: #e8e8e8;
+}
+
+.content .btn:hover {
+    outline: 2px solid #e8e8e8;
+    background: transparent;
+    color: #e8e8e8;
+}
+
+.content .btn:active {
+    box-shadow: none;
 }
