@@ -278,3 +278,53 @@ body {
 .content .btn:active {
     box-shadow: none;
 }
+
+.popular-ads-container {
+    /* Стилі для контейнера популярних оголошень */
+}
+
+.popular-ads {
+    display: flex;
+    justify-content: space-between; /* Рівномірний розподіл між картками */
+}
+
+.popular-ads .content-card {
+    /* Стилі для кожної картки популярного оголошення */
+    width: calc(33.33% - 20px); /* Ширина карти */
+    margin-bottom: 20px; /* Проміжок між карточками */
+}
+
+.popular-ads-container a {
+    text-decoration: none; /* Вимкнення підкреслення для всіх посилань */
+}
+
+.popular-ads-container a:hover {
+    /* Стилі для наведення на посилання */
+    /* Наприклад, тут ви можете задати інші кольори або ефекти */
+    color: #ff0000; /* Червоний колір по наведенню */
+}
+
+.category-ads-container {
+    /* Стилі для контейнера популярних оголошень */
+}
+
+.category-ads {
+    display: flex;
+    justify-content: space-between; /* Рівномірний розподіл між картками */
+}
+
+.category-ads .content-card {
+    /* Стилі для кожної картки популярного оголошення */
+    width: calc(33.33% - 20px); /* Ширина карти */
+    margin-bottom: 20px; /* Проміжок між карточками */
+}
+
+.category-ads-container a {
+    text-decoration: none; /* Вимкнення підкреслення для всіх посилань */
+}
+
+.category-ads-container a:hover {
+    /* Стилі для наведення на посилання */
+    /* Наприклад, тут ви можете задати інші кольори або ефекти */
+    color: #ff0000; /* Червоний колір по наведенню */
+}
