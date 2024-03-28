@@ -1,5 +1,5 @@
 header {
-    background-color: #f1bdd4;
+    background-color: #d2b8c3;
     padding: 10px;
     display: flex;
     justify-content: flex-end;
@@ -32,19 +32,19 @@ button {
 
 .reg {
     color: white;
-    background-color: rgba(104, 85, 224, 1);
+    background-color: rgb(148, 85, 224);
 }
 
 .log {
-    color: rgb(104, 85, 224);
+    color: rgb(189, 85, 224);
     background-color: rgba(255, 255, 255, 1);
-    border: 1px solid rgba(104, 85, 224, 1);
+    border: 1px solid rgb(152, 85, 224);
 }
 
 button:hover {
     color: white;
-    box-shadow: 0 0 20px rgba(104, 85, 224, 0.6);
-    background-color: rgba(104, 85, 224, 1);
+    box-shadow: 0 0 20px rgba(189, 85, 224, 0.6);
+    background-color: rgb(141, 85, 224);
 }
 
 .social-card {
@@ -143,7 +143,7 @@ body {
 }
 
 .select_area {
-    color : #4451FE;
+    color : #aa44fe;
     display : flex;
     align-items: center;
     font-family: 'Roboto', sans-serif; line-height:24px;
@@ -190,7 +190,7 @@ body {
 }
 
 .search_text:focus + .search_icon{
-    color : #4451FE;
+    color : #aa44fe;
     transform: translate(55px,0);
     -webkit-transform: translate(55px,0);
     -o-transform: translate(55px,0);
@@ -367,4 +367,30 @@ footer p {
         width: 100%;
         margin-bottom: 20px;
     }
+}
+
+.styled_section {
+    background-color: #cba2b3;
+    padding: 50px 0;
+}
+
+.styled_section .frontbuttens {
+    color: #333;
+}
+
+.styled_section .frontbuttens button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.styled_section .new-btn-primary {
+    background-color: #bf00ff;
+    color: #fff;
+}
+
+.styled_section .new-btn-secondary {
+    background-color: #bf00ff;
+    color: #fff;
 }
