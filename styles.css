@@ -1,5 +1,5 @@
 header {
-    background-color: #FAFAFA;
+    background-color: #f1bdd4;
     padding: 10px;
     display: flex;
     justify-content: flex-end;
@@ -50,7 +50,6 @@ button:hover {
 .social-card {
     width: fit-content;
     height: fit-content;
-    background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -62,7 +61,6 @@ button:hover {
 .socialContainer {
     width: 52px;
     height: 52px;
-    background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -77,7 +75,7 @@ button:hover {
 }
 /* twitter*/
 .containerTwo:hover {
-    background-color: #00acee;
+    background-color: #000000;
     transition-duration: .3s;
 }
 /* linkdin*/
@@ -121,7 +119,7 @@ button:hover {
 }
 
 body {
-    background-color : #FAFAFA;
+    background-color : #e3c8d3;
     display : grid;
 }
 
@@ -327,4 +325,46 @@ body {
     /* Стилі для наведення на посилання */
     /* Наприклад, тут ви можете задати інші кольори або ефекти */
     color: #ff0000; /* Червоний колір по наведенню */
+}
+
+/* Стилі для підвалу (Footer) */
+footer {
+    background-color: #b99999;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-card {
+    margin-top: 20px;
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Медіа-запит для відображення сторінки на малих екранах */
+@media (max-width: 768px) {
+    .search {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .text_and-icon {
+        width: 70%;
+    }
+
+    .content-card {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .popular-ads .content-card,
+    .category-ads .content-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
